@@ -1,0 +1,61 @@
+/******** base color css ********/
+button:active {
+    outline: none;
+    border: none;
+}
+button:focus {
+    outline: 0;
+}
+.common_btn {
+    display: inline-block;
+    padding: 0px 32px;
+    line-height: 3.76;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 700;
+    border-radius: 4px;
+    @include transform_time(.3s);
+    font-family: $heading_font;
+    text-align: center;
+    color: $white;
+    background-color: $base_color_1;
+    border: 1px solid transparent;
+    // @media #{$mobile} {
+    //     padding: 17px 20px;
+    //     font-size: 15px;
+    // }
+    &.lg_btn{
+        padding: 0px 28px;
+        background-color: $black;
+        color: #fff;
+        &:hover{
+            background-color: $white;
+            color: $black;
+            border: 1px solid $black;
+        }
+        // @media #{$x_small_mobile} {
+        //     padding: 14px 24px;
+        //     line-height: 16px;
+        //  }
+    }
+    &.md_btn{
+        padding: 0px 52px;
+        background-color: $black;
+        color: #fff;
+        &:hover{
+            background-color: $white;
+            color: $black;
+            border: 1px solid $black;
+        }
+    }
+    &.xs_btn{
+        padding: 0px 37px;
+        background-color: $white;
+        color: #170e44;
+        &:hover{
+            color: $white;
+            background-color: #170e44;
+            border: 1px solid #170e44;
+        }
+    }
+}

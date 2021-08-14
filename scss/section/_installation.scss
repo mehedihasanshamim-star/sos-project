@@ -1,0 +1,110 @@
+.sos-installation{
+    padding-top: 160px;
+    padding-bottom: 100px;
+    position: relative;
+    overflow: hidden;
+    @media #{$tab_device} {
+       padding: 120px 15px;
+     }
+    @media #{$large_mobile} {
+       padding: 100px 15px;
+     }
+    @media #{$small_mobile} {
+       padding: 100px 15px;
+     }
+    @media #{$x_small_mobile} {
+        padding-top: 80px;
+        padding-bottom: 50px;
+     }
+   
+    .sos-install-shape{
+        position: absolute;
+        display: inline-block;
+        height: 282px;
+        width: 615px;
+        border-radius: 142px;
+        background-color: $base_color_1;
+        transform: rotate(-55deg);
+        left: -380px;
+        bottom: 0;
+        z-index: -1;
+        animation: sos-black 10s linear infinite;
+        animation-timing-function: ease-out;
+        
+    }
+    .sos-install-shape-2{
+        right: -380px;
+        left: auto;
+        bottom: 0;
+        background-color: $black;
+        transform: rotate(-125deg);
+        animation: sos-black-2 7s linear infinite;
+        animation-timing-function: ease-out;
+        @media #{$big_screen}{
+            background-color: $base_color_1;
+        }
+    }
+    .sos-install-round-shape{
+        position: absolute;
+        display: inline-block;
+        height: 394px;
+        width: 394px;
+        border-radius: 50%;
+        background-color: #f5f8fe;
+        transform: rotate(-55deg);
+        left: -150px;
+        z-index: -2;
+        bottom: 68px;
+    }
+    .sos-install-round-shape-2{
+        right: -150px;
+        left: auto;
+        z-index: -2;
+        bottom: 68px;
+    }
+    &.sos-installation-2{
+        margin-bottom: 100px;
+        @media #{$medium_device} {
+           padding: 100px 0;
+         }
+        @media #{$tab_device} {
+           margin-bottom: 80px;
+           padding-top: 30px;
+         }
+        @media #{$large_mobile} {
+           margin-bottom: 60px;
+           padding-top: 30px;
+         }
+        @media #{$small_mobile} {
+           margin-bottom: 60px;
+           padding-top: 30px;
+         }
+        @media #{$x_small_mobile} {
+           margin-bottom: 50px;
+           padding-top: 30px;
+         }
+    }
+}
+.installation-title{
+    @media #{$tab_device} {
+        margin-top: 30px;
+     }
+    @media #{$large_mobile} {
+        margin-top: 30px;
+     }
+    @media #{$small_mobile} {
+        margin-top: 30px;
+     }
+    @media #{$x_small_mobile} {
+        margin-top: 30px;
+     }
+    .section-title{
+        margin-bottom: 0;
+        .section-title-hadding{
+            margin-bottom: 15px;
+        }
+        .common_btn{
+            margin-top: 18px;
+        }
+    }
+}

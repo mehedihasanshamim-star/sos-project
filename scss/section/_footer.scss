@@ -1,0 +1,49 @@
+.sos-footer{
+    background-image: url(../img/footer-bg.png);
+    background-size: cover;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    padding-top: 320px;
+    padding-bottom: 400px;
+    @media #{$big_screen}{
+        padding: 200px 0 290px 0;
+    }
+    @media #{$medium_device}{
+        padding: 60px 0 300px 0;
+    }
+    @media #{$tab_device}{
+        padding: 0px 0 300px 0;
+    }
+    @media #{$large_mobile}{
+        padding: 100px 0 300px 0;
+    }
+    @media #{$small_mobile}{
+        padding: 100px 0 300px 0;
+    }
+    @media #{$x_small_mobile}{
+        padding: 150px 0 200px 0;
+    }
+}
+.footer-content{
+    .footer-hadding{
+        @media #{$x_small_mobile}{
+            font-size: 28px;
+        }
+    }
+    .footer-sub-hadding{
+        font-size: 40px;
+        margin: 20px 0px 40px;
+        color: $black;
+        @media #{$large_mobile}{
+            font-size: 30px;
+            line-height: 40px;
+        }
+        @media #{$small_mobile}{
+            font-size: 30px;
+            line-height: 40px;
+        }
+        @media #{$x_small_mobile}{
+            font-size: 18px;
+        }
+    }
+}

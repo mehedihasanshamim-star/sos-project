@@ -1,0 +1,179 @@
+.navbar .navbar-toggler{
+    border: none;
+    @media #{$medium_device}{
+       margin-top: -48px;
+    }
+    @media #{$tab}{
+       margin-top: -48px;
+    }
+    span{
+        display: block;
+        height: 4px;
+        width: 25px;
+        background-color: #fff;
+        border-radius: 100px;
+        margin: 5px 0px;
+        transition: .4s;
+        &:nth-of-type(1){
+            transform: rotate(45deg);
+            transform-origin: 0% 140%;
+        }
+        &:nth-of-type(2){
+            opacity: 0;
+        }
+        &:nth-of-type(3){
+            transform: rotate(-45deg);
+            transform-origin: 10% -12%;
+        }
+    }
+    &:hover{
+       span:nth-of-type(2){
+            transform: translate(0);
+        }
+    }
+}
+.navbar-toggler.collapsed span:nth-of-type(1){
+    transform: rotate(0) !important;
+}
+.navbar-toggler.collapsed span:nth-of-type(2){
+    opacity: 1 !important;
+    transform: translate(-7px);
+}
+.navbar-toggler.collapsed span:nth-of-type(3){
+    transform: rotate(0) !important;
+}
+.navbar-toggler:focus{
+    box-shadow: none !important;
+}
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 99;
+    padding : 62px  0 0 0 ; 
+    @media #{$tab_device}{
+        padding: 30px 0 0 0;
+    }
+    @media #{$large_mobile}{
+        padding: 30px 0 0 0;
+    }
+    @media #{$small_mobile}{
+        padding: 30px 0 0 0;
+    }
+    @media #{$x_small_mobile}{
+        padding: 30px 0 0 0;
+    }
+}
+.navbar{
+    padding: 0 50px 0 50px ;
+    @media #{$tab_device}{
+        padding:  30px;
+    }
+    @media #{$large_mobile}{
+        padding: 0 0 0 0px;
+    }
+    @media #{$small_mobile}{
+        padding: 0 0 0 0px;
+    }
+    @media #{$x_small_mobile}{
+        padding: 0 0 0 0px;
+    }
+
+    .navbar-brand{
+            font-size: 200px;
+            font-family: $heading_font;
+            font-weight: $font_semi_bold;
+            color: #ffffff41;
+            display: inline-block;
+            @media #{$big_screen}{
+                font-size: 150px;
+            }
+            @media #{$tab_device}{
+                font-size: 150px;
+                padding-left: 30px;
+            }
+            @media #{$large_mobile}{
+                font-size: 100px;
+                padding-left: 30px;
+            }
+            @media #{$small_mobile}{
+                font-size: 100px;
+                padding-left: 20px;
+            }
+            @media #{$x_small_mobile}{
+                font-size: 100px;
+                padding-left: 15px;
+            }
+    }
+    .navbar-nav{
+        padding-right: 125px;
+        @media #{$big_screen}{
+           padding-right: 0;
+         }
+        @media #{$medium_device}{
+           padding-right: 0;
+           text-align: center;
+         }
+        @media #{$tab}{
+           padding-right: 0;
+           text-align: center;
+         }
+        .nav-item{
+            .nav-link{
+                font-size: 30px;
+                color: #170e44;
+                margin-left: 82px;
+                @media #{$extra_big_screen}{
+                    margin-left:40px;
+                    font-size: 28px;
+                 }
+                @media #{$big_screen}{
+                    margin-left:20px;
+                    font-size: 22px;
+                 }
+                @media #{$medium_device}{
+                    margin-left:0px;
+                    padding: 15px 0;
+                 }
+                @media #{$tab_device}{
+                    margin-left:0px;
+                    padding: 15px 0;
+                 }
+                @media #{$large_mobile}{
+                    margin-left:0px;
+                 }
+                @media #{$small_mobile}{
+                    margin-left:0px;
+                 }
+                @media #{$x_small_mobile}{
+                    margin-left:0px;
+                 }
+            }
+        }
+    }
+}
+    @media #{$medium_device}{
+       .sm-end{
+           justify-content: flex-end !important;
+       }
+    }
+    @media #{$tab}{
+       .sm-end{
+           justify-content: flex-end !important;
+       }
+    }
+    @media #{$medium_device}{
+        .navbar-collapse{
+            background-color: $white;
+            padding: 50px 30px;
+        }
+    }
+    @media #{$tab}{
+        .navbar-collapse{
+            background-color: $white;
+            padding: 50px 30px;
+        }
+    }
+    

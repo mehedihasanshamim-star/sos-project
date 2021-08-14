@@ -1,0 +1,37 @@
+.sos-price{
+    background-image: url(../img/dryer.png);
+    background-size: cover;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    padding-top: 400px;
+    padding-bottom: 120px;
+    margin-top: -400px;
+    @media #{$medium_device} {
+       background-size: contain;
+       padding: 350px 0px 100px 0px;
+    }
+    @media #{$tab} {
+       background-size: contain;
+       padding: 350px 15px 100px 15px;
+    }
+}
+.price-img{
+    padding-right: 70px;
+    @media #{$tab_device} {
+        padding-right: 0px;
+        margin-top: 30px;
+        text-align: center;
+     }
+    @media #{$large_mobile} {
+        padding-right: 0px;
+        margin-top: 30px;
+     }
+    @media #{$small_mobile} {
+        padding-right: 0px;
+        margin-top: 30px;
+     }
+    @media #{$x_small_mobile} {
+        padding-right: 0px;
+        margin-top: 20px;
+     }
+}

@@ -1,0 +1,43 @@
+.sos-banner{
+    background-image: url(../img/banner-1.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 264px 0 684px 0;
+    position: relative;
+    @media #{$big_screen}{
+       padding: 240px 0 280px 0;
+    }
+    @media #{$tab_device}{
+       padding: 240px 0 300px 0;
+    }
+    @media #{$large_mobile}{
+       padding: 200px 0 300px 0;
+    }
+    @media #{$small_mobile}{
+       padding: 130px 0 240px 0;
+    }
+    @media #{$x_small_mobile}{
+       padding-top: 160px;
+       padding-bottom: 340px;
+    }
+}
+.sos-banner-sub-hadding{
+    letter-spacing: 9px;
+    line-height: 1.6;
+    @media #{$tab_device}{
+        letter-spacing: 3px;
+    }
+    @media #{$large_mobile}{
+        letter-spacing: 2px;
+    }
+    @media #{$small_mobile}{
+        letter-spacing: 2px;
+    }
+    @media #{$x_small_mobile}{
+        letter-spacing: 1px;
+    }
+}
+.sos-banner-hadding{
+    line-height: 1.3;
+}
